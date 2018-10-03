@@ -1,0 +1,34 @@
+.scrolls-script {
+  nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #745872, #874489);
+      .nav-link {
+        padding: 10px 20px;
+        display: inline-block;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+  }
+
+
+  [class^="section"] {
+    height: 100vh;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dddddd;
+    &:before {
+      content:'';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}

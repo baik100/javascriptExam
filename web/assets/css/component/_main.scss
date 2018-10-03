@@ -1,0 +1,1667 @@
+/**
+ Main page style
+*/
+
+//section title common
+
+.main {
+  overflow: hidden;
+}
+
+.title-area {
+  h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #4c4c4c;
+    text-align: center;
+    @include screen-sm {
+      font-size: 36px;
+    }
+  }
+  p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.section-visual {
+  background-image: linear-gradient(-30deg, #eb3349, #f45c43);
+  position: relative;
+  z-index: 10;
+  .timewilltell {
+    text-align: center;
+    position: relative;
+    padding: 160px 0 0 0;
+    @include screen-sm {
+      padding: 120px 0 0 0;
+      margin: 0 auto;
+    }
+    img {
+      width: 410px;
+      margin-bottom: 20px;
+      @include screen-sm {
+        margin-bottom: 10px;
+        width: 60%;
+      }
+    }
+    p.social-messaging-app {
+      font-size: 28px;
+      color: #c41e31;
+      @include screen-sm {
+        font-size: 20px;
+      }
+    }
+    p.mobile-app {
+      position: absolute;
+      z-index: -1;
+      top: 160px;
+      left: 50%;
+      margin-left: -300px;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.1);
+      font-size: 110px;
+      font-weight: 800;
+      text-transform: uppercase;
+      @include screen-sm {
+        font-size: 40px;
+        top: 120px;
+        left: 0;
+        right: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+  .main-banner {
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    .img {
+      position: relative;
+      top: -80px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      max-width: 300px;
+      margin: 0 auto;
+      @include screen-sm {
+        width: 70%;
+        top: -50px;
+      }
+    }
+    .bg-img {
+      position: absolute;
+      top: 0;
+      @include screen-sm {
+        height: 430px;
+      }
+    }
+  }
+}
+
+.story-behind {
+  padding: 180px 0 50px;
+  text-align: center;
+  @include screen-sm {
+    padding: 50px 0;
+  }
+  .title-area {
+    margin-bottom: 50px;
+  }
+  .story-lists {
+    padding-bottom: 50px;
+    .story-item {
+      overflow: hidden;
+      position: relative;
+      .icon {
+        float: left;
+        width: 50%;
+        @include screen-sm {
+          display: none;
+        }
+        img {
+          width: 240px;
+        }
+      }
+      .text {
+        float: left;
+        width: 50%;
+        @include screen-sm {
+          float: right;
+          width: 100%;
+          padding: 0 20px 0 80px;
+        }
+        h5 {
+          font-size: 24px;
+          font-weight: 600;
+          color: #f66665;
+          margin-bottom: 20px;
+          text-align: left;
+          @include screen-sm {
+            font-size: 15px;
+          }
+        }
+        p {
+          max-width: 450px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #3c3838;
+          margin: 20px 0;
+          text-align: left;
+          @include screen-sm {
+            font-size: 13px;
+          }
+        }
+      }
+      .dot {
+        position: absolute;
+        left: 41%;
+        top: 40%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #cccccc;
+        @include screen-sm {
+          left: 8%;
+        }
+        &:hover {
+          background-color: #f66665;
+          border: 20px solid #ffffff;
+          box-sizing: content-box;
+          margin-left: -20px;
+          margin-top: -20px;
+        }
+      }
+      .line {
+        width: 1px;
+        height: 500px;
+        background-color: #cccccc;
+        position: absolute;
+        left: 42.24%;
+        top: 0;
+        @include screen-sm {
+          left: 12.24%;
+        }
+      }
+    }
+  }
+}
+
+.story-behind-bottom {
+  background-image: linear-gradient(-30deg, #eb3349, #f45c43);
+  height: 300px;
+  position: relative;
+  @include screen-sm {
+    height: 150px;
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: -1px;
+    background: url(https://gbksoft.com/img/cases/timewilltell/white-bg.png) no-repeat 50%/cover;
+  }
+  img {
+    padding: 90px;
+    @include screen-sm {
+      padding: 70px 10px;
+    }
+  }
+}
+
+.message-capsulation {
+  padding: 75px 60px 0 60px;
+  @include screen-sm {
+    padding: 30px 20px;
+  }
+  .message-group {
+    .use-cases {
+      .use {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: #f66665;
+        @include screen-sm {
+          font-size: 16px;
+        }
+      }
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        background-color: #f66665;
+        display: inline-block;
+        @include screen-sm {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+    .message-title {
+      padding: 20px 0;
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #4c4c4c;
+        @include screen-sm {
+          font-size: 28px;
+          word-break: normal;
+        }
+      }
+      p {
+        margin: 20px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #3c3838;
+        @include screen-sm {
+          font-size: 14px;
+        }
+      }
+    }
+    .lists {
+      ul {
+        .item {
+          float: left;
+          width: 33.33%;
+          padding: 15px;
+          @include screen-sm {
+            float: none;
+            width: 100%;
+            display: block;
+            padding: 20px 10px;
+          }
+          .number {
+            img {
+              @include screen-sm {
+                float: right;
+              }
+            }
+          }
+          h5 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #4c4c4c;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include screen-sm {
+              font-size: 22px;
+            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #3c3838;
+            @include screen-sm {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .message-images {
+    img {
+      width: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.monetization {
+  padding: 75px 60px 0 60px;
+  @include screen-sm {
+    padding: 30px 20px;
+  }
+  .monet-group {
+    .use-cases {
+      .use {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: #f66665;
+        @include screen-sm {
+          font-size: 16px;
+        }
+      }
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        background-color: #f66665;
+        display: inline-block;
+        @include screen-sm {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+    .monet-title {
+      padding: 20px 0;
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #4c4c4c;
+        @include screen-sm {
+          font-size: 28px;
+        }
+      }
+      p {
+        margin: 20px 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #3c3838;
+        @include screen-sm {
+          font-size: 14px;
+        }
+      }
+    }
+    .item {
+      text-align: center;
+      .scene-left {
+        position: relative;
+        @include screen-sm {
+          display: none;
+        }
+        .left-1 {
+          position: absolute;
+          top: 300px;
+          left: 300px;
+        }
+        .left-2 {
+          position: absolute;
+          top: 400px;
+          left: 250px;
+        }
+        .left-3 {
+          position: absolute;
+          top: 440px;
+          left: 290px;
+        }
+        .left-4 {
+          position: absolute;
+          top: 500px;
+          left: 310px;
+        }
+      }
+      .scene-center {
+        position: relative;
+        height: 750px;
+        @include screen-sm {
+          height: 400px;
+        }
+        .center-block-1 img {
+
+        }
+        .center-block-2 img {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          margin-left: -250px;
+          z-index: 1000;
+          @include screen-sm {
+            top: 15%;
+            left: 50%;
+            margin-left: -140px;
+          }
+        }
+        .center-block-3 img {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          margin-left: -250px;
+          z-index: 2000;
+          @include screen-sm {
+            top: 30%;
+            left: 50%;
+            margin-left: -140px;
+          }
+        }
+        .center-block-4 img {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          margin-left: -250px;
+          z-index: 3000;
+          @include screen-sm {
+            top: 45%;
+            left: 50%;
+            margin-left: -140px;
+          }
+        }
+      }
+      .scene-right {
+        position: relative;
+        height: 100px;
+        @include screen-sm {
+          display: none;
+        }
+        .left-1 {
+          position: absolute;
+          bottom: 650px;
+          right: 280px;
+        }
+        .left-2 {
+          position: absolute;
+          bottom: 450px;
+          right: 250px;
+        }
+        .left-3 {
+          position: absolute;
+          bottom: 370px;
+          right: 280px;
+        }
+        .left-4 {
+          position: absolute;
+          bottom: 280px;
+          right: 250px;
+        }
+      }
+    }
+  }
+}
+
+.push-notification {
+  padding: 75px 60px 0 60px;
+  background-image: linear-gradient(-30deg, #eb3349, #f45c43);
+  position: relative;
+  height: 1000px;
+  @include screen-sm {
+    padding: 50px 20px;
+  }
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    background: url("https://gbksoft.com//img/cases/timewilltell/dark-blue-bg.png") 50% 0/cover no-repeat;
+  }
+  .push-group {
+    .use-cases {
+      .use {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: #fff;
+        @include screen-sm {
+          font-size: 16px;
+        }
+      }
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        background-color: #fff;
+        display: inline-block;
+        @include screen-sm {
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+    .push-title {
+      padding: 20px 0;
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        @include screen-sm {
+          font-size: 28px;
+        }
+      }
+      p {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        max-width: 600px;
+        @include screen-sm {
+          font-size: 14px;
+        }
+      }
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      @include screen-sm {
+        font-size: 20px;
+      }
+    }
+    .item {
+      margin: 20px 0;
+      @include screen-sm {
+        display: inline-block;
+        text-align: right;
+      }
+      .lists-1 {
+        margin-bottom: 25px;
+        @include screen-sm {
+        }
+      }
+      .lists-2 {
+        margin-bottom: 25px;
+        padding-left: 100px;
+        @include screen-sm {
+          padding: 0;
+        }
+      }
+      .lists-3 {
+        margin-bottom: 25px;
+      }
+      .number {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .box {
+        display: inline-block;
+        width: 415px;
+        height: 76px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 18px 30px 20px;
+        border-radius: 5px;
+        vertical-align: middle;
+        margin-left: -10px;
+        box-shadow: 0 12px 13px rgba(0, 0, 1, .13);
+        @include screen-sm {
+          display: inline-block;
+          width: 85%;
+          height: 120px;
+          margin-left: -10px;
+          text-align: left;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          color: #000;
+          .title {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .images {
+      position: absolute;
+      right: -34%;
+      bottom: 0;
+      width: 900px;
+      @include screen-sm {
+        right: 0;
+        bottom: 20px;
+        width: 300px;
+        z-index: 1;
+      }
+    }
+    .bg-img {
+    }
+  }
+}
+
+.wireframes {
+  padding: 20px 60px 0 60px;
+  background-color: #092742;
+  @include screen-sm {
+    padding: 30px 20px;
+  }
+  .wire-group {
+    position: relative;
+    .title-area {
+      h3 {
+        color: #fff;
+        @include screen-sm {
+          font-size: 28px;
+        }
+      }
+      p {
+        max-width: 600px;
+        color: #ffffff;
+        margin: 20px auto 70px;
+        @include screen-sm {
+          font-size: 14px;
+        }
+      }
+    }
+    .item {
+      position: absolute;
+      top: 160px;
+      left: 0;
+      width: 600px;
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fde4ac;
+      }
+      p {
+        font-size: 14px;
+        color: #ffffff;
+      }
+      .lists-1 {
+        float: left;
+        width: 245px;
+        padding-right: 15px;
+        @include screen-sm {
+          float: none;
+          text-align: left;
+          margin-bottom: 20px;
+          max-width: 300px;
+        }
+      }
+      .lists-2 {
+        float: left;
+        width: 330px;
+        @include screen-sm {
+          float: none;
+          text-align: left;
+          margin-bottom: 20px;
+          max-width: 300px;
+        }
+      }
+      .lists-3 {
+        float: left;
+        width: 330px;
+        margin: 20px 0;
+        @include screen-sm {
+          float: none;
+          text-align: left;
+          margin-bottom: 20px;
+          max-width: 300px;
+        }
+      }
+    }
+    .images {
+      position: relative;
+      height: 600px;
+      margin-bottom: 50px;
+      @include screen-sm {
+        height: 300px;
+      }
+      .scene-top {
+        @include screen-sm {
+          display: none;
+        }
+        .top-1 {
+          position: absolute;
+          top: 50px;
+          left: 600px;
+        }
+        .top-2 {
+          position: absolute;
+          top: 250px;
+          left: 550px;
+        }
+        .top-3 {
+          position: absolute;
+          top: 80px;
+          left: 350px;
+        }
+        .top-4 {
+          position: absolute;
+          top: 150px;
+          left: 250px;
+
+        }
+        .top-5 {
+          position: absolute;
+          top: 200px;
+          left: 50px;
+        }
+      }
+      .scene-center {
+        @include screen-sm {
+          display: none;
+        }
+        .center-1 {
+          position: absolute;
+          top: 200px;
+          left: 500px;
+          z-index: 1000;
+        }
+        .center-2 {
+          position: absolute;
+          top: 400px;
+          left: 700px;
+          z-index: 1000;
+        }
+      }
+      .scene-bottom {
+        @include screen-sm {
+          display: none;
+        }
+        .bottom-1 {
+          position: absolute;
+          bottom: 0;
+          left: 500px;
+
+        }
+        .bottom-2 {
+          position: absolute;
+          bottom: 0;
+          left: 700px;
+
+        }
+        .bottom-3 {
+          position: absolute;
+          bottom: 50px;
+          left: 400px;
+
+        }
+        .bottom-4 {
+          position: absolute;
+          bottom: 20px;
+          left: 250px;
+
+        }
+      }
+      .wire {
+        position: relative;
+        .wi-1 {
+          @include screen-sm {
+            position: absolute;
+            top: 200px;
+          }
+        }
+        .wi-2 {
+          position: absolute;
+          bottom: 0;
+          @include screen-sm {
+            top: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo-evolution {
+  padding: 75px 0;
+  position: relative;
+  @include screen-sm {
+    padding: 50px 0;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 60%;
+    width: 100%;
+    background-color: #ededed;
+    @include screen-sm {
+      bottom: 70%;
+    }
+  }
+  .logo-group {
+    .title-area {
+      max-width: 600px;
+      margin: 0 auto;
+      h3 {
+        @include screen-sm {
+          font-size: 28px;
+        }
+      }
+      p {
+        text-align: center;
+        @include screen-sm {
+          font-size: 14px;
+          padding: 0 20px;
+          .red {
+            color: #f66665;
+
+          }
+        }
+      }
+    }
+    .note-block {
+      background: url(https://gbksoft.com/img/cases/timewilltell/notebook.png) no-repeat 50%/cover;
+      width: 700px;
+      height: 380px;
+      margin: 30px auto 0;
+      position: relative;
+      @include screen-sm {
+        position: relative;
+        left: -70px;
+        width: 400px;
+        height: 217px;
+      }
+      .note-left {
+        position: absolute;
+        width: 142px;
+        top: 105px;
+        left: 250px;
+        @include screen-sm {
+          width: 80px;
+          top: 60px;
+          left: 140px;
+        }
+      }
+      .note-right {
+        position: absolute;
+        width: 152px;
+        top: 90px;
+        left: 420px;
+        @include screen-sm {
+          width: 85px;
+          top: 40px;
+          left: 240px;
+        }
+      }
+    }
+    .card-block {
+      position: relative;
+      .card-bg {
+        width: 100%;
+        left: -100px;
+        right: -100px;
+        height: 170px;
+        background-image: linear-gradient(-30deg, #eb3349, #f45c43);
+        @include screen-sm {
+          height: 100px;
+        }
+        .line-center {
+          position: absolute;
+          z-index: 10;
+          width: 20px;
+          height: 100%;
+          background-color: #fff;
+          top: 0;
+          left: 50%;
+          margin-left: -2.5px;
+          @include screen-sm {
+            width: 5px;
+          }
+        }
+      }
+      .card-left {
+        .img-1 {
+          position: absolute;
+          width: 220px;
+          z-index: 100;
+          top: 50px;
+          left: 50%;
+          margin-left: -360px;
+          @include screen-sm {
+            width: 95px;
+            top: 15px;
+            margin-left: -150px;
+          }
+        }
+        .img-2 {
+          position: absolute;
+          width: 220px;
+          top: 15px;
+          left: 50%;
+          margin-left: -250px;
+          @include screen-sm {
+            width: 95px;
+            top: 30px;
+            margin-left: -110px;
+          }
+        }
+      }
+      .card-right {
+        .img-3 {
+          position: absolute;
+          width: 248px;
+          z-index: 10;
+          top: 40px;
+          right: 50%;
+          margin-right: -400px;
+          @include screen-sm {
+            width: 95px;
+            margin-right: -150px;
+            top: 20px;
+          }
+        }
+        .img-4 {
+          position: absolute;
+          width: 200px;
+          top: 25px;
+          right: 50%;
+          margin-right: -250px;
+          @include screen-sm {
+            width: 95px;
+            top: 40px;
+            margin-right: -110px;
+          }
+        }
+      }
+    }
+    .text-box {
+      padding: 0 20px;
+      @include screen-sm {
+        padding: 0 20px;
+      }
+      .text-left {
+        float: left;
+        width: 48%;
+        margin-top: 100px;
+        @include screen-sm {
+          float: none;
+          width: 100%;
+          margin-top: 60px;
+        }
+      }
+      .text-right {
+        float: right;
+        width: 48%;
+        margin-top: 100px;
+        @include screen-sm {
+          float: none;
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+      p {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        @include screen-sm {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.general-style {
+  padding: 75px 60px 0 60px;
+  position: relative;
+  height: 1000px;
+  @include screen-sm {
+    padding: 50px 20px;
+    height: 1350px;
+  }
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: url(https://gbksoft.com/img/cases/timewilltell/gray-bg.png) no-repeat 50%/cover;
+  }
+  .general-group {
+    position: relative;
+    .title-area {
+      margin-bottom: 50px;
+      h3 {
+        @include screen-sm {
+          font-size: 32px;
+        }
+      }
+    }
+    .item {
+      .lists {
+        .use-cases {
+          .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: 3px;
+            background-color: #f66665;
+            display: inline-block;
+            @include screen-sm {
+              width: 3px;
+              height: 3px;
+            }
+          }
+
+        }
+        h3 {
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          color: #4c4c4c;
+          @include screen-sm {
+            font-size: 28px;
+          }
+        }
+        p {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #4c4c4c;
+          @include screen-sm {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
+        }
+        .text-1 {
+          max-width: 570px;
+          margin-bottom: 20px;
+        }
+        .text-2 {
+          max-width: 400px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .images {
+      position: absolute;
+      right: 0;
+      top: 20%;
+      max-width: 570px;
+      @include screen-sm {
+        position: relative;
+      }
+    }
+    .color-item {
+      padding: 50px 60px;
+      text-align: center;
+      margin-right: -60px;
+      @include screen-sm {
+        padding: 30px 10px 80px 10px;
+      }
+      .lists-1 {
+        position: relative;
+        float: left;
+        width: 25%;
+        @include screen-sm {
+          width: 50%;
+          margin-bottom: 30px;
+        }
+        .circle-1 {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: #fede63;
+          box-shadow: -3px 13px 21px rgba(254, 222, 99, .3);
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+          .number-1 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            @include screen-sm {
+              width: 30px;
+              height: 30px;
+            }
+            p {
+              font-size: 30px;
+              font-weight: bold;
+              color: #000;
+              @include screen-sm {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .image-1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -43px;
+          margin-top: -10px;
+        }
+        .circle-line {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border: 2px solid #c9c9c9;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -1;
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .circle-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -2;
+        }
+      }
+      .lists-2 {
+        position: relative;
+        float: left;
+        width: 25%;
+        margin-bottom: 30px;
+        @include screen-sm {
+          width: 50%;
+        }
+        .circle-2 {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: #f88667;
+          box-shadow: -3px 13px 21px rgba(248, 134, 103, 0.3);
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+          .number-2 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            @include screen-sm {
+              width: 30px;
+              height: 30px;
+            }
+            p {
+              font-size: 30px;
+              font-weight: bold;
+              color: #000;
+              @include screen-sm {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .image-2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -43px;
+          margin-top: -10px;
+        }
+        .circle-line {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border: 2px solid #c9c9c9;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -1;
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .circle-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -2;
+        }
+      }
+      .lists-3 {
+        position: relative;
+        float: left;
+        width: 25%;
+        margin-bottom: 30px;
+        @include screen-sm {
+          width: 50%;
+        }
+        .circle-3 {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: #f4483c;
+          box-shadow: -3px 13px 21px rgba(244, 72, 60, 0.3);
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+          .number-3 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+            @include screen-sm {
+              width: 30px;
+              height: 30px;
+            }
+            p {
+              font-size: 30px;
+              font-weight: bold;
+              color: #000;
+              @include screen-sm {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .image-3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -43px;
+          margin-top: -10px;
+        }
+        .circle-line {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border: 2px solid #c9c9c9;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -1;
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .circle-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -2;
+        }
+      }
+      .lists-4 {
+        position: relative;
+        float: left;
+        width: 25%;
+        margin-bottom: 30px;
+        @include screen-sm {
+          width: 50%;
+        }
+        .circle-4 {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: #f4483c;
+          box-shadow: -3px 13px 21px rgba(244, 72, 60, 0.3);
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+          .number-4 {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            bottom: 0;
+            right: 0;
+            @include screen-sm {
+              width: 30px;
+              height: 30px;
+            }
+            p {
+              font-size: 30px;
+              font-weight: bold;
+              color: #000;
+              @include screen-sm {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        .image-4 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-left: -43px;
+          margin-top: -10px;
+        }
+        .circle-line {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border: 2px solid #c9c9c9;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -1;
+          @include screen-sm {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .circle-effect {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: -15px;
+          margin-top: 15px;
+          z-index: -2;
+        }
+      }
+    }
+  }
+}
+
+.technologies {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 30px 0;
+  .tech-group {
+    .title-area {
+      h3 {
+        @include screen-sm {
+          font-size: 32px;
+        }
+      }
+    }
+    .chart-top {
+      padding: 50px;
+      .block-1, .block-2, .block-3 {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #f4483c;
+        border-radius: 8px;
+        margin: 20px;
+        p {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+    .chart-center {
+      .block-1, .block-2 {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #f4483c;
+        border-radius: 8px;
+        margin: 20px;
+        p {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+    .chart-bottom {
+      .block-1, .block-2 {
+        display: inline-block;
+        padding: 12px 20px;
+        background-color: #f4483c;
+        border-radius: 8px;
+        margin: 20px;
+        p {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+    .block-white {
+      .block-white-left {
+
+        .item {
+          .detail {
+            padding: 30px;
+            width: 150px;
+            height: 100px;
+            border: 1px solid #999999;
+            p {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.features {
+  position: relative;
+  z-index: 100;
+  background: url("https://gbksoft.com/img/cases/timewilltell/features-bg.png") no-repeat 50% 100%/cover;
+  padding: 30px 60px 60px 60px;
+  @include screen-sm {
+    padding: 30px 15px;
+  }
+  .title-area {
+    h3 {
+      color: #ffffff;
+      @include screen-sm {
+        font-size: 28px;
+      }
+    }
+  }
+  .item {
+    margin: 60px auto;
+    text-align: center;
+    @include screen-sm {
+      margin: 40px auto;
+    }
+    ul {
+      margin-left: -40px;
+      margin-right: -40px;
+      @include screen-sm {
+        margin: 0;
+      }
+      .lists {
+        float: left;
+        width: 25%;
+        padding: 0 80px;
+        @include screen-sm {
+          width: 50%;
+          padding: 0;
+        }
+        .icon {
+          padding: 20px;
+          background-color: #ffffff;
+          border-radius: 15px;
+          width: 150px;
+          height: 160px;
+          box-shadow: -12px 20px 87px rgba(0, 0, 0, .13);
+          @include screen-sm {
+            width: 140px;
+            height: 150px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0a0a0a;
+            letter-spacing: -0.07em;
+            @include screen-sm {
+              font-size: 13px;
+            }
+          }
+        }
+        .box {
+          margin-left: 15px;
+          width: 120px;
+          height: 15px;
+          border-radius: 0 0 15px 15px;
+          background-color: rgba(255, 255, 255, 0.6);
+          @include screen-sm {
+            width: 110px;
+            height: 10px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  margin-top: -80px;
+  padding: 100px 60px 0 60px;
+  background-image: linear-gradient(-30deg, #eb3349, #f45c43);
+  @include screen-sm {
+    padding: 80px 20px 0 20px;
+  }
+  .title-area {
+    margin-bottom: 50px;
+    @include screen-sm {
+      margin-bottom: 40px;
+    }
+    h3 {
+      color: #fff;
+      @include screen-sm {
+        font-size: 32px;
+      }
+    }
+  }
+  .text {
+    text-align: center;
+    .img-left {
+      float: left;
+      transform: rotate(180deg);
+      @include screen-sm {
+        display: none;
+      }
+    }
+    .img-right {
+      float: right;
+      @include screen-sm {
+        display: none;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 500;
+      max-width: 860px;
+      line-height: 32px;
+      display: inline-block;
+      @include screen-sm {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+  .images {
+
+  }
+}
+
+.you-have-an-idea {
+  padding: 90px 60px;
+  background-color: #f6f6f6;
+  text-align: center;
+  @include screen-sm {
+    padding: 30px 20px;
+  }
+  .title-area {
+    margin-bottom: 50px;
+    @include screen-sm {
+      margin-bottom: 20px;
+    }
+    h3 {
+      @include screen-sm {
+        font-size: 32px;
+        max-width: 150px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .btn-area {
+    .btn-1 {
+      display: inline-block;
+      padding: 22px;
+      width: 240px;
+      height: 72px;
+      border-radius: 8px;
+      border: 1px solid #f4483c;
+      margin: 20px;
+      &:hover {
+        background-color: #f4483c;
+      }
+    }
+    .btn-2 {
+      display: inline-block;
+      padding: 22px;
+      width: 240px;
+      height: 72px;
+      border-radius: 8px;
+      background-color: #f4483c;
+      margin: 20px;
+      @include screen-sm {
+        margin-top: 10px;
+      }
+      &:hover {
+        border: 1px solid #f4483c;
+        background-color: #fff;
+      }
+    }
+    a {
+      font-size: 21px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      &:hover {
+        color: #f4483c;
+      }
+      span {
+        color: #f4483c;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.mark {
+  padding: 90px 60px;
+  border-bottom: 1px solid #e4e4e4;
+  text-align: center;
+  @include screen-sm {
+    padding: 50px 10px;
+  }
+  .item {
+    display: inline-block;
+  }
+  .link {
+    margin-left: 30px;
+    margin-right: 30px;
+    @include screen-sm {
+      margin: 0;
+    }
+    img {
+      max-height: 150px;
+      @include screen-sm {
+        max-height: 45px;
+      }
+    }
+  }
+}
+
+
+
+
+

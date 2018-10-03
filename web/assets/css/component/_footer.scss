@@ -1,0 +1,128 @@
+/* footer */
+
+footer.footer {
+  padding: 30px 15px 0 15px;
+  @include screen-sm {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .footer-item {
+    .clearfix {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    .footer-list {
+      display: inline-block;
+      vertical-align: top;
+      @include screen-sm {
+        text-align: center;
+      }
+      .logo {
+        width: 520px;
+        @include screen-sm {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        p {
+          color: #595d6a;
+          margin: 20px 0;
+        }
+        .pp {
+          color: #595d6a;
+          margin-top: 20px;
+        }
+      }
+      .overview {
+        width: 350px;
+        @include screen-sm {
+          display: block;
+          width: 100%;
+          min-width: 300px;
+          margin: 0 auto 40px;
+          text-align: center;
+        }
+        h3 {
+          font-size: 21px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        p {
+          .link {
+            color: #595d6a;
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .development {
+        width: 350px;
+        @include screen-sm {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        h3 {
+          font-size: 21px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        p {
+          .link {
+            color: #595d6a;
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .affiliate-program {
+        width: 520px;
+        @include screen-sm {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        h3 {
+          font-size: 21px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        p {
+          .link {
+            color: #595d6a;
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .contact-us {
+        width: 450px;
+        @include screen-sm {
+          display: block;
+          width: 100%;
+        }
+        h3 {
+          font-size: 21px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        p {
+          .link {
+            color: #595d6a;
+            display: block;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

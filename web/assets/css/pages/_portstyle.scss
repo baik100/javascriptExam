@@ -1,0 +1,29 @@
+/**
+ Main page style
+*/
+
+//section title common
+
+.title-area {
+  position: relative;
+  text-align: center;
+  .line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1.5px;
+    width: 3px;
+    height: 60px;
+    background-color: #83fff3;
+  }
+  h3 {
+    padding: 60px 0;
+    font-size: 60px;
+    color: #83fff3;
+  }
+}
+
+
+.about-me {
+
+}

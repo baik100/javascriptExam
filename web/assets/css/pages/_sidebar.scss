@@ -1,0 +1,109 @@
+.sidebar-wrap {
+  .site-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+    .is-sidebar & {
+      display: block;
+    }
+  }
+  .header {
+    position: relative;
+    z-index: 900;
+    height: 80px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    nav {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 30px;
+      flex-grow: 1;
+      text-align: center;
+    }
+    .btn-sidebar {
+      margin-right: 20px;
+      i {
+        font-size: 40px;
+        color: #fff;
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    z-index: 1200;
+    width: 300px;
+    background-image: linear-gradient(35deg, #b750ff, #ffb2c8, #b2a3ff);
+    -webkit-transition:  .6s;
+    -moz-transition:  .6s;
+    -ms-transition:  .6s;
+    -o-transition:  .6s;
+    transition:  .6s;
+    .is-sidebar & {
+      left: 0;
+    }
+    h2 {
+      padding: 90px 0 60px;
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 45px;
+      color: #fff;
+      font-weight: bold;
+    }
+    nav {
+      ul {
+        .nav-item {
+          padding: 0 25px;
+          .nav-link {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            padding: 8px 0;
+            text-transform: uppercase;
+            display: block;
+            border-bottom: 1px solid transparent;
+            -webkit-transition:  0.6s;
+            -moz-transition:  0.6s;
+            -ms-transition:  0.6s;
+            -o-transition:  0.6s;
+            transition:  0.6s;
+            &:hover {
+              border-bottom-color: #fff;
+            }
+          }
+          .dropdown {
+            padding: 10px 0 30px 20px;
+            display: none;
+            a {
+              font-size: 15px;
+              color: rgba(255, 255, 255, 0.8);
+              font-weight: 400;
+              text-transform: uppercase;
+              display: block;
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      i {
+        font-size: 40px;
+        color: #FFF;
+      }
+    }
+  }
+}

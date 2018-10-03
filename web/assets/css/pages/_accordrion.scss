@@ -1,0 +1,25 @@
+.accordion-script {
+  ul {
+    width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #eeeeee;
+    li {
+      padding: 20px 0;
+      border-bottom: 1px solid #eeeeee;
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #999999;
+        &.is-active {
+          color: cornflowerblue;}
+      }
+      p {
+        display: none;
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+  }
+}

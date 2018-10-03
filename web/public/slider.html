@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>script exam</title>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google material icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
+    <script src="../assets/js/lib/jquery-1.12.2.min.js"></script>
+    <script src="../assets/js/lib/jquery.easing.1.3.js"></script>
+    <script src="../assets/js/lib/slick.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+
+    <!--[if lt IE 9]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+    <!--[end if]-->
+</head>
+<body>
+<div id="wrap">
+    <div class="visual">
+        <div class="slider">
+            <div class="track clearfix">
+                <div class="vs vs-3"></div>
+                <div class="vs vs-1"></div>
+                <div class="vs vs-2"></div>
+                <div class="vs vs-3"></div>
+            </div>
+            <div class="btn-ctrl">
+                <div class="btn-prev">prev</div>
+                <div class="btn-next">next</div>
+            </div>
+            <div class="dots">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const slide = $('.vs');
+    const track = $('.slider .track');
+    const buttonPrev = $('.btn-prev');
+    const buttonNext = $('.btn-next');
+    const dots = $('.dots');
+    let slideLength = slide.length;
+    let currentIndex = 1;
+
+    initialize();
+    onClickDot();
+
+    function initialize() {
+        const winW = $(window).innerWidth();
+        const trackWidth = slideLength * 100 + '%';
+
+        track.css('width', trackWidth);
+        slide.css({'width': winW});
+        moveSlide(currentIndex);
+
+        for(let i = 0; i < slideLength; i++){
+            dots.append('<div class="dot"></div>');
+        }
+        checkDot();
+    }
+
+    function checkDot() {
+        $('.dot').eq(currentIndex).addClass('is-active').siblings().removeClass('is-active');
+    }
+
+    function moveSlide(currentIndex) {
+        track.css({'margin-left': currentIndex * -100 + "%"});
+    }
+
+    function onClickDot() {
+        $('.dot').on('click', function () {
+            const dotIndex = $(this).index();
+            currentIndex = dotIndex;
+            moveSlide(currentIndex);
+            checkDot();
+        })
+    }
+
+    function slidePrev() {
+        console.log("prev index: ", currentIndex);
+        if(currentIndex < 1) {
+            currentIndex = slideLength - 1;
+        }  else {
+            currentIndex = currentIndex - 1;
+        }
+        moveSlide(currentIndex);
+        checkDot();
+    }
+
+    function slideNext() {
+        if(currentIndex > 2) {
+            currentIndex = 0;
+        }  else {
+            currentIndex = currentIndex + 1;
+        }
+        moveSlide(currentIndex);
+        checkDot();
+    }
+
+    buttonPrev.on('click', function () {
+        slidePrev();
+    });
+    buttonNext.on('click', function () {
+        slideNext();
+    });
+
+
+
+
+    $(window).resize(function () {
+        initialize();
+    })
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
